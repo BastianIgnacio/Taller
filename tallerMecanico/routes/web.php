@@ -19,3 +19,11 @@ Route::get('/', function () {
 Route::get('/prueba', function () {
     return view('Main/main');
 });
+
+Route::get('/mainSecretaria', function () {
+    return view('Secretaria/GestionarClientes/mostrarClientes');
+});
+
+Route::get('/mainSecretaria', function () {
+    return view('Secretaria/GestionarClientes/mostrarClientes');
+});
