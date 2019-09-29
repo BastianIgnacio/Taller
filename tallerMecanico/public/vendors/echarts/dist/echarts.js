@@ -16074,7 +16074,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @alias module:zrender/Handler
 	     * @constructor
 	     * @extends module:zrender/mixin/Eventful
-	     * @param {HTMLElement} root Main HTML element for painting.
+	     * @param {HTMLElement} root dashboard HTML element for painting.
 	     * @param {module:zrender/Storage} storage Storage instance.
 	     * @param {module:zrender/Painter} painter Painter instance.
 	     */
