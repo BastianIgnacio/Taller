@@ -16,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tallerMecanico/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state relative-caret-position="357">
+              <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -39,11 +39,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tallerMecanico/resources/views/welcome.blade.php">
+        <entry file="file://$PROJECT_DIR$/tallerMecanico/resources/views/main.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="94" column="22" lean-forward="true" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+            <state relative-caret-position="265">
+              <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="53" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-11" />
           </provider>
         </entry>
       </file>
@@ -65,7 +75,9 @@
         <option value="$PROJECT_DIR$/tallerMecanico/resources/views/addServicio/addServicio.blade.php" />
         <option value="$PROJECT_DIR$/tallerMecanico/resources/views/login/login.blade.php" />
         <option value="$PROJECT_DIR$/tallerMecanico/resources/views/Main/main.blade.php" />
+        <option value="$PROJECT_DIR$/tallerMecanico/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/tallerMecanico/routes/web.php" />
+        <option value="$PROJECT_DIR$/tallerMecanico/resources/views/main.blade.php" />
       </list>
     </option>
   </component>
@@ -82,45 +94,55 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Taller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Taller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Taller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Taller" type="462c0819:PsiDirectoryNode" />
-              <item name="tallerMecanico" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Taller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Taller" type="462c0819:PsiDirectoryNode" />
-              <item name="tallerMecanico" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Taller" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Taller" type="462c0819:PsiDirectoryNode" />
-              <item name="tallerMecanico" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
               <item name="Taller" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="~/web-projects/Taller" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Taller" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/web-projects/Taller" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="tallerMecanico" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Taller" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/web-projects/Taller" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="tallerMecanico" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Taller" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/web-projects/Taller" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="tallerMecanico" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Taller" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/web-projects/Taller" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="tallerMecanico" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Taller" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/web-projects/Taller" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="tallerMecanico" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="resources" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="gestionarTecnicos" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Taller" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="~/web-projects/Taller" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="tallerMecanico" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="routes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -176,12 +198,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569696176003</updated>
-      <workItem from="1569696177440" duration="7368000" />
+      <workItem from="1569696177440" duration="11338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7368000" />
+    <option name="totallyTimeSpent" value="11338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -272,13 +294,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tallerMecanico/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tallerMecanico/resources/views/dashboard/dashboard.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -291,10 +306,25 @@
         <state relative-caret-position="-105" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tallerMecanico/resources/views/welcome.blade.php">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="94" column="22" lean-forward="true" selection-start-line="94" selection-start-column="22" selection-end-line="94" selection-end-column="22" />
+        <state relative-caret-position="-11" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tallerMecanico/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="18" column="24" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tallerMecanico/resources/views/main.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="45" column="16" selection-start-line="45" selection-start-column="16" selection-end-line="53" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
