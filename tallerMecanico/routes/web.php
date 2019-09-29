@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/main', function () {
-    return view('main');
+    return view('Main/main');
 });
 
 Route::get('/add-servicio', function () {
