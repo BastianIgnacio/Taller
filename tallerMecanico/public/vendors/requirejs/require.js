@@ -1742,7 +1742,7 @@ var requirejs, require, define;
     }
 
     /**
-     * Main entry point.
+     * dashboard entry point.
      *
      * If the only argument to require is a string, then the module that
      * is represented by that string is fetched for the appropriate context.

@@ -1,7 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5d7f264d-0efa-409b-ae7b-4c58027abff4" name="Default Changelist" comment="" />
+    <list default="true" id="5d7f264d-0efa-409b-ae7b-4c58027abff4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/AddServcioController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/AddTecnicosController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/DashboardController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/EditarTecnicosController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/GestionTecnicosController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/GestionarPermisosController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/LoginConstroller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/addServicio/addServicio.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/dashboard/dashboard.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarPermisos/gestionarPermisos.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarTecnicos/addTecnico.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarTecnicos/editarTecnico.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarTecnicos/gestionarTecnicos.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/ControladoresAdministrador/AdministradorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/login/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/ControladoresEncargadoPanol/EncargadoPanolController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/ControladoresSecretaria/SecretariaController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/Controladores_Otros/OtrosController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/Flot/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/Flot/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/Flot/source/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/Flot/source/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/bootstrap-datetimepicker/docs/theme/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/bootstrap-datetimepicker/docs/theme/nav.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/datatables.net-buttons/js/dataTables.buttons.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/datatables.net-buttons/js/dataTables.buttons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/echarts/dist/echarts.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/echarts/dist/echarts.common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/echarts/dist/echarts.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/echarts/dist/echarts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/echarts/dist/echarts.simple.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/echarts/dist/echarts.simple.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/fullcalendar/dist/fullcalendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/fullcalendar/dist/fullcalendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/ion.rangeSlider/js/ion.rangeSlider.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/ion.rangeSlider/js/ion.rangeSlider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/jquery/src/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/jquery/src/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/parsleyjs/bower_components/expect.js/support/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/parsleyjs/bower_components/expect.js/support/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/parsleyjs/bower_components/jquery/dist/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/parsleyjs/bower_components/jquery/dist/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/parsleyjs/bower_components/jquery/src/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/parsleyjs/bower_components/jquery/src/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/parsleyjs/bower_components/mocha/mocha.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/parsleyjs/bower_components/mocha/mocha.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/requirejs/require.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/requirejs/require.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/select2/docs/_sass/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/select2/docs/_sass/_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/select2/tests/vendor/jquery-1.7.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/select2/tests/vendor/jquery-1.7.2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/select2/vendor/jquery-2.1.0.js" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/select2/vendor/jquery-2.1.0.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/switchery/dist/switchery.css" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/switchery/dist/switchery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/public/vendors/switchery/switchery.css" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/public/vendors/switchery/switchery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Administrador/GestionarClientes/mostrarClientes.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Administrador/GestionarDocumentosTributarios/documentosTributarios.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Administrador/GestionarInventario/gestionarInventario.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Administrador/GestionarProveedores/gestionarProveedores.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Administrador/GestionarRoles/gestionarRoles.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Administrador/GestionarServicios/gestionarServicios.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Administrador/GestionarTecnicos/gestionarTecnicos.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Administrador/GestionarVehiculos/gestionarVehiculos.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/EncargadoPanol/GestionarInventario/gestionarInventario.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/EncargadoPanol/mainEncargadoPanol.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Login/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/Login/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Secretaria/GestionarClientes/mostrarClientes.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Secretaria/GestionarDocumentosTributarios/documentosTributarios.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Secretaria/GestionarInventario/gestionarInventario.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Secretaria/GestionarProveedores/gestionarProveedores.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Secretaria/GestionarServicios/gestionarServicios.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Secretaria/GestionarTecnicos/gestionarTecnicos.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/Secretaria/GestionarVehiculos/gestionarVehiculos.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/routes/web.php" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,8 +75,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tallerMecanico/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+            <state relative-caret-position="271">
+              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -32,7 +91,6 @@
       <list>
         <option value="$PROJECT_DIR$/tallerMecanico/resources/views/Login/login.blade.php" />
         <option value="$PROJECT_DIR$/tallerMecanico/resources/views/GestionarPermisos/gestionarPermisos.blade.php" />
-        <option value="$PROJECT_DIR$/tallerMecanico/routes/web.php" />
         <option value="$PROJECT_DIR$/tallerMecanico/resources/views/dashboard/dashboard.blade.php" />
         <option value="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarPermisos/gestionarPermisos.blade.php" />
         <option value="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarTecnicos/addTecnico.blade.php" />
@@ -40,6 +98,8 @@
         <option value="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarTecnicos/gestionarTecnicos.blade.php" />
         <option value="$PROJECT_DIR$/tallerMecanico/resources/views/addServicio/addServicio.blade.php" />
         <option value="$PROJECT_DIR$/tallerMecanico/resources/views/login/login.blade.php" />
+        <option value="$PROJECT_DIR$/tallerMecanico/resources/views/Main/main.blade.php" />
+        <option value="$PROJECT_DIR$/tallerMecanico/routes/web.php" />
       </list>
     </option>
   </component>
@@ -104,6 +164,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tallerMecanico/resources/views/GestionarPermisos" />
@@ -149,15 +210,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569696176003</updated>
-      <workItem from="1569696177440" duration="6712000" />
+      <workItem from="1569696177440" duration="7116000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6712000" />
+    <option name="totallyTimeSpent" value="7116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22007436" />
@@ -263,8 +325,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tallerMecanico/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="28" column="3" lean-forward="true" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        <state relative-caret-position="271">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
         </state>
       </provider>
     </entry>

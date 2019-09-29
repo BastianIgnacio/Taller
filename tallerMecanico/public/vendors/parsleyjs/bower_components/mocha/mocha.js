@@ -11565,7 +11565,7 @@ function hasOwnProperty(obj, prop) {
         return done([{value: newString.join('')}]);
       }
 
-      // Main worker method. checks all permutations of a given edit length for acceptance.
+      // dashboard worker method. checks all permutations of a given edit length for acceptance.
       function execEditLength() {
         for (var diagonalPath = -1 * editLength; diagonalPath <= editLength; diagonalPath += 2) {
           var basePath;
