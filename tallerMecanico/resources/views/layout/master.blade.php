@@ -128,7 +128,9 @@
     </div>
         <!-- /top navigation -->
 
-<div><h1>pene</h1></div>
+<div>
+    @yield('content')
+</div>
 
 <!-- jQuery -->
 <script src="../vendors/jquery/dist/jquery.min.js"></script>
