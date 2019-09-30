@@ -12,18 +12,38 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layout/master');
 });
 
+//Route::get('/', function () {
+//    return view('login/login');
+//});
 
-Route::get('/prueba', function () {
+Route::get('/main', function () {
     return view('Main/main');
 });
 
-Route::get('/mainSecretaria', function () {
-    return view('Secretaria/GestionarClientes/mostrarClientes');
+Route::get('/add-servicio', function () {
+    return view('addServicio/addServicio');
 });
 
-Route::get('/mainSecretaria', function () {
-    return view('Secretaria/GestionarClientes/mostrarClientes');
+Route::get('/dashboard', function () {
+    return view('dashboard/dashboard');
 });
+
+Route::get('/gestionar-permisos', function () {
+    return view('gestionarPermisos/gestionarPermisos');
+});
+
+Route::get('/gestionar-tecnicos', function () {
+    return view('gestionarTecnicos/gestionarTecnicos');
+});
+
+Route::get('/gestionar-tecnicos/add-tecnico', function () {
+    return view('gestionarTecnicos/addTecnico');
+});
+
+Route::get('/gestionar-tecnicos/editar-tecnico', function () {
+    return view('gestionarTecnicos/editarTecnico');
+});
+
