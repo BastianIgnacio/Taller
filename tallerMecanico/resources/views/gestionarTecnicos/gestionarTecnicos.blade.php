@@ -1,3 +1,7 @@
 @extends('../layout.master')
 
-<h1>gestionar tecnicos !!gestionar tecnicos !!gestionar tecnicos !!gestionar tecnicos !!</h1>
+@section('content')
+
+    <h1>gestionar tecnicos!!</h1>
+
+@stop

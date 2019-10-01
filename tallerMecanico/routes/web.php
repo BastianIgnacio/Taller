@@ -11,39 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layout/master');
-});
+Route::get('/', 'MasterController@dashboard');
 
-//Route::get('/', function () {
-//    return view('login/login');
-//});
+Route::get('/add-servicio', 'MasterController@addServicio');
 
-Route::get('/main', function () {
-    return view('Main/main');
-});
+Route::get('/dashboard', 'MasterController@dasboard');
 
-Route::get('/add-servicio', function () {
-    return view('addServicio/addServicio');
-});
+Route::get('/gestionar-permisos', 'MasterController@gestionarPermisos');
 
-Route::get('/dashboard', function () {
-    return view('dashboard/dashboard');
-});
+Route::get('/gestionar-tecnicos', 'MasterController@gestionarTecnicos');
 
-Route::get('/gestionar-permisos', function () {
-    return view('gestionarPermisos/gestionarPermisos');
-});
+Route::get('/gestionar-tecnicos/add-tecnico', 'MasterController@addTecnico');
 
-Route::get('/gestionar-tecnicos', function () {
-    return view('gestionarTecnicos/gestionarTecnicos');
-});
-
-Route::get('/gestionar-tecnicos/add-tecnico', function () {
-    return view('gestionarTecnicos/addTecnico');
-});
-
-Route::get('/gestionar-tecnicos/editar-tecnico', function () {
-    return view('gestionarTecnicos/editarTecnico');
-});
-
+Route::get('/gestionar-tecnicos/editar-tecnico', 'MasterController@editarTecnico');
