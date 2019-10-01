@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5d7f264d-0efa-409b-ae7b-4c58027abff4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/MasterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/app/Http/Controllers/MasterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/addServicio/addServicio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/addServicio/addServicio.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/dashboard/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/dashboard/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarPermisos/gestionarPermisos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarPermisos/gestionarPermisos.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarTecnicos/addTecnico.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarTecnicos/addTecnico.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarTecnicos/editarTecnico.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarTecnicos/editarTecnico.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarTecnicos/gestionarTecnicos.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarTecnicos/gestionarTecnicos.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/layout/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tallerMecanico/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

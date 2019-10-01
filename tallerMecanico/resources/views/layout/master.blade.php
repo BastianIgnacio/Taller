@@ -63,7 +63,7 @@
                         <ul class="nav side-menu">
                             <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href={{ action('MasterController@dashboard') }}>Dashboard</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-edit"></i> Gestión inventario <span class="fa fa-chevron-down"></span></a>
@@ -74,13 +74,13 @@
                             </li>
                             <li><a><i class="fa fa-desktop"></i> Gestión servicios <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Crear nuevo sercvicio</a></li>
+                                    <li><a href="{{ action('MasterController@addServicio') }}">Crear nuevo servicio</a></li>
                                     <li><a href="#">Servicios activos</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-table"></i> Gestión personal <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Nómina</a></li>
+                                    <li><a href="{{ action('MasterController@gestionarTecnicos') }}">Nómina</a></li>
                                     <li><a href="{{ action('MasterController@addTecnico') }}">Agregar personal</a></li>
                                 </ul>
                             </li>
@@ -126,52 +126,52 @@
             </div>
         </div>
     </div>
-        <!-- /top navigation -->
+    <!-- /top navigation -->
 
-<div>
-    @yield('content')
-</div>
+    <div>
+        @yield('content')
+    </div>
 
-<!-- jQuery -->
-<script src="../vendors/jquery/dist/jquery.min.js"></script>
-<!-- Bootstrap -->
-<script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- FastClick -->
-<script src="../vendors/fastclick/lib/fastclick.js"></script>
-<!-- NProgress -->
-<script src="../vendors/nprogress/nprogress.js"></script>
-<!-- Chart.js -->
-<script src="../vendors/Chart.js/dist/Chart.min.js"></script>
-<!-- gauge.js -->
-<script src="../vendors/gauge.js/dist/gauge.min.js"></script>
-<!-- bootstrap-progressbar -->
-<script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
-<!-- iCheck -->
-<script src="../vendors/iCheck/icheck.min.js"></script>
-<!-- Skycons -->
-<script src="../vendors/skycons/skycons.js"></script>
-<!-- Flot -->
-<script src="../vendors/Flot/jquery.flot.js"></script>
-<script src="../vendors/Flot/jquery.flot.pie.js"></script>
-<script src="../vendors/Flot/jquery.flot.time.js"></script>
-<script src="../vendors/Flot/jquery.flot.stack.js"></script>
-<script src="../vendors/Flot/jquery.flot.resize.js"></script>
-<!-- Flot plugins -->
-<script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-<script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-<script src="../vendors/flot.curvedlines/curvedLines.js"></script>
-<!-- DateJS -->
-<script src="../vendors/DateJS/build/date.js"></script>
-<!-- JQVMap -->
-<script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
-<script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
-<script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
-<!-- bootstrap-daterangepicker -->
-<script src="../vendors/moment/min/moment.min.js"></script>
-<script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-<!-- Custom Theme Scripts -->
-<script src="../build/js/custom.min.js"></script>
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
 
 </body>
 </html>

@@ -14,7 +14,7 @@ class MasterController extends Controller
         return view('gestionarTecnicos.editarTecnico');
     }
 
-    public function gestionarTecnico(){
+    public function gestionarTecnicos(){
         return view('gestionarTecnicos.gestionarTecnicos');
     }
 
