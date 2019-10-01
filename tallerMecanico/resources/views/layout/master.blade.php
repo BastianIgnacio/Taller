@@ -36,7 +36,7 @@
         <div class="col-md-3 left_col" style="position: relative;">
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="#" class="site_title"> <i class="fa fa-wrench" aria-hidden="true"></i>
+                    <a href="{{ action('MasterController@dashboard') }}" class="site_title"> <i class="fa fa-wrench" aria-hidden="true"></i>
                         <span>Taller</span></a>
                 </div>
 
