@@ -11,39 +11,42 @@
 |
 */
 
-Route::get('/', function () {
-    return view('layout/master');
+Route::group(['middleware' => ['guest']], function () {
+      Route::get('/login', function () { return view('login/login');})->name('login');
+      Route::get('/', function () { return view('login/login');})->name('login');
 });
 
-//Route::get('/', function () {
-//    return view('login/login');
-//});
-
-Route::get('/main', function () {
-    return view('Main/main');
-});
-
-Route::get('/add-servicio', function () {
-    return view('addServicio/addServicio');
-});
-
-Route::get('/dashboard', function () {
-    return view('dashboard/dashboard');
-});
-
-Route::get('/gestionar-permisos', function () {
-    return view('gestionarPermisos/gestionarPermisos');
-});
-
-Route::get('/gestionar-tecnicos', function () {
-    return view('gestionarTecnicos/gestionarTecnicos');
-});
-
-Route::get('/gestionar-tecnicos/add-tecnico', function () {
-    return view('gestionarTecnicos/addTecnico');
-});
-
-Route::get('/gestionar-tecnicos/editar-tecnico', function () {
-    return view('gestionarTecnicos/editarTecnico');
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/', function () {
+        return view('login/login');
+    });
+  
+    Route::get('/main', function () {
+      return view('Main/main');
+    });
+  
+    Route::get('/add-servicio', function () {
+      return view('addServicio/addServicio');
+    });
+  
+  Route::get('/dashboard', function () {
+      return view('dashboard/dashboard');
+  });
+  
+  Route::get('/gestionar-permisos', function () {
+      return view('gestionarPermisos/gestionarPermisos');
+  });
+  
+  Route::get('/gestionar-tecnicos', function () {
+      return view('gestionarTecnicos/gestionarTecnicos');
+  });
+  
+  Route::get('/gestionar-tecnicos/add-tecnico', function () {
+      return view('gestionarTecnicos/addTecnico');
+  });
+  
+  Route::get('/gestionar-tecnicos/editar-tecnico', function () {
+      return view('gestionarTecnicos/editarTecnico');
+  });
 });
 

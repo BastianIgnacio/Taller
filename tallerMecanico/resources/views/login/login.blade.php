@@ -30,10 +30,19 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <form>
+            <form class="form-group">
               <h1>Login</h1>
+              <div class="separator">
               <div>
-                <input type="text" class="form-control" placeholder="Nombre de usuario" required="" />
+              <select  class="form-control">
+                            <option>Administrador</option>
+                            <option>Secretaria</option>
+                            <option>Encargado Pañol</option>
+              </select>
+              </div>
+              <div class="separator">
+              <div>
+                <input type="text" class="form-control" placeholder="Email de usuario" required="" />
               </div>
               <div>
                 <input type="password" class="form-control" placeholder="Contraseña" required="" />
@@ -45,11 +54,8 @@
 
               <div class="clearfix"></div>
 
-              <div class="separator">
-                <p class="change_link">Usuario nuevo?
-                  <a href="#signup" class="to_register"> Crear cuenta </a>
-                </p>
-
+              
+                
                 <div class="clearfix"></div>
                 <br />
 
