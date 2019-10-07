@@ -1,166 +1,167 @@
 @extends('../layout.master')
 
 @section('content')
-
-    <div class="col-md-9 col-sm-9 col-xs-9">
-        <div class="x_panel">
-            <div class="x_title">
-                <h2>Nuevo servicio</h2>
-                <div class="clearfix"></div>
+<div class="" role="main">
+    <div class="">
+        <div class="page-title">
+            <div class="title_right">
             </div>
-            <div class="x_content">
+        </div>
+        <div class="clearfix"></div>
 
-                <!-- Smart Wizard -->
-                <div id="wizard" class="form_wizard wizard_horizontal">
-                    <ul class="wizard_steps">
-                        <li>
-                            <a href="#step-1">
-                                <span class="step_no">1</span>
-                                <span class="step_descr">
-                                              Ingresar cliente y vechiculo<br />
-                                              <small>Ingrese los datos</small>
-                                          </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#step-2">
-                                <span class="step_no">2</span>
-                                <span class="step_descr">
-                                              Agregar Tecnico<br />
-                                              <small>Seleccione los tecnicos</small>
-                                          </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#step-3">
-                                <span class="step_no">3</span>
-                                <span class="step_descr">
-                                              Agregar Insumos<br />
-                                              <small>Selecione los insumos</small>
-                                          </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#step-4">
-                                <span class="step_no">4</span>
-                                <span class="step_descr">
-                                              Planificar tareas<br />
-                                              <small>Agrege las tareas</small>
-                                          </span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div id="step-1">
-                        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nombre-cliente">Nombre Cliente<span class="required"></span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="nombrecliente" required="required" class="form-control col-md-7 col-xs-12">
+        <div class="row">
 
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="client-type">Cliente nuevo<span class="required"></span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="checkbox" id=cliente-nuevo checked data-toggle="toggle">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="modelo-vehiculo">Modelo  Vehiculo <span class="required"></span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input type="text" id="modeloVehiculo" name="modelo-vehiculo" required="required" class="form-control col-md-7 col-xs-12">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Año</label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <input id="año" class="form-control col-md-7 col-xs-12" type="text" name="año"required="required">
-                                </div>
-                            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Nuevo Servicio</h2>
 
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Seleccione un Servicio<span class="required"></span>
-                                </label>
-                                <div class="btn-group col-md-3 col-sm-3 col-xs-12">
-                                    <button type="button" class="btn bootstrap-toggle btn-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mostrar servicios</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item " href="#">Mantencion</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Cambio Aceite</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Revision</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Cambio componente</a>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+
+
+                        <!-- Smart Wizard -->
+                        <div id="wizard" class="form_wizard wizard_horizontal">
+                            <ul class="wizard_steps">
+                                <li>
+                                    <a href="#step-1">
+                                        <span class="step_no">1</span>
+                                        <span class="step_descr">
+                                            Cliente<br />
+                                            <small>Registrar datos cliente</small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#step-2">
+                                        <span class="step_no">2</span>
+                                        <span class="step_descr">
+                                            Vehiculo<br />
+                                            <small>Registrar datos del vehiculo</small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#step-3">
+                                        <span class="step_no">3</span>
+                                        <span class="step_descr">
+                                            Tecnico<br />
+                                            <small>Ingrese un tecnico en jefe</small>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div id="step-1">
+                                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="rut">Rut<span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="rut" required="required" class="form-control col-md-7 col-xs-12">
+                                        </div>
                                     </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="nombre-cliente">Nombre<span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="nombre_cliente" required="required" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="apellidos-cliente">Apellidos<span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="apellidos_cliente" required="required" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Correo<span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input id="correo" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Numero<span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input id="numero" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                        </div>
+                                    </div>
+
+
+
+                                </form>
+                            </div>
+                            <div id="step-2">
+                                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="patente-auto">Patente<span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="patente_auto" required="required" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="modelo-auto">Modelo<span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="modelo_auto" required="required" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Marca<span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input id="marca" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Año<span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input id="año" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                        </div>
+                                    </div>
+
+
+
+                                </form>
+                            </div>
+                            <div id="step-3">
+                                <div class="x_content">
+                                    <p class="text-muted font-13 m-b-30">
+                                    </p>
+                                    <table id="datatable" class="table table-striped table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Rut</th>
+                                                <th>Nombre</th>
+                                                <th>Apellido</th>
+                                                <th>Contacto</th>
+                                                <th>Correo</th>
+                                                <th>Seleccionar</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Descripcion<span class="required"></span>
-                                </label>
-                                <div class="col-md-6 col-sm-6 col-xs-12">
-                                    <textarea class="form-control" name="descripcion" id="descripcion" rows="3"></textarea>
-                                </div>
-                            </div>
 
-                            <div class="form-group">
-                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-                                    <button class="btn btn-primary" type="button">Cancelar</button>
-                                    <button type="submit" class="btn btn-success">Ingresar</button>
-                                </div>
-                            </div>
-
-                        </form>
-
-
-                        <div id="step-2">
-                            <h2 class="StepTitle">Step 2 Content</h2>
-                            <p>
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
                         </div>
-                        <div id="step-3">
-                            <h2 class="StepTitle">Step 3 Content</h2>
-                            <p>
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
-                        <div id="step-4">
-                            <h2 class="StepTitle">Step 4 Content</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            </p>
-                        </div>
+                        <!-- End SmartWizard Content -->
+
+
+
 
                     </div>
-                    <!-- End SmartWizard Content -->
-
                 </div>
             </div>
         </div>
     </div>
-
-
-
+</div>
 
 @stop
