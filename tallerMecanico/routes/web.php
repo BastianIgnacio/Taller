@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('gestionarTecnicos/gestionarTecnicos');
+    return view('gestionarProveedores/editarProveedor');
 });
 
 Route::get('/add-servicio', function () {
