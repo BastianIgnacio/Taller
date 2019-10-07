@@ -134,13 +134,12 @@
         <!-- /top navigation -->
         <div class="right_col" role="main">
             <div class="">
-            @yield('content')
+                @yield('content')
             </div>
         </div>
-        
         <footer>
             <div class="pull-right">
-                Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+                Team 'Los Fletos' - 2019
             </div>
             <div class="clearfix"></div>
         </footer>
