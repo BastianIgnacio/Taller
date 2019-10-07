@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d7f264d-0efa-409b-ae7b-4c58027abff4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/addServicio/Backup addServicio.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarProveedores/addProveedor.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarProveedores/editarProveedor.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/gestionarProveedores/gestionarProveedores.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/addServicio/addServicio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/addServicio/addServicio.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/dashboard/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/dashboard/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tallerMecanico/resources/views/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/tallerMecanico/resources/views/layout/master.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +18,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Taller" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
