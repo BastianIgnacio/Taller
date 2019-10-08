@@ -91,13 +91,13 @@
                                 </li>
                                 <li><a><i class="fa fa-desktop"></i> Gestión servicios <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="{{ action('MasterController@addServicio') }}">Crear nuevo servicio</a></li>
+                                        <li><a href="{{ action('AddServicioController@index') }}">Crear nuevo servicio</a></li>
                                         <li><a href="#">Servicios activos</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-table"></i> Gestión personal <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="{{ action('MasterController@gestionarTecnicos') }}">Nómina</a></li>
+                                        <li><a href="{{ action('GestionTecnicosController@index') }}">Nómina</a></li>
                                         <li><a href="{{ action('MasterController@addTecnico') }}">Agregar personal</a></li>
                                     </ul>
                                 </li>
