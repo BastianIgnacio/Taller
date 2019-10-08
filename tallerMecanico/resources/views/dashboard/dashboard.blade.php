@@ -55,6 +55,7 @@
                             <th>Vehículo</th>
                             <th>Cliente</th>
                             <th>Técnico Encargado</th>
+                            <th>Acciones</th>
                         </tr>
                         </thead>
 
@@ -67,6 +68,10 @@
                             <td>Chevrolet Corsa</td>
                             <td>Juan Pérez</td>
                             <td>Mr. Anderson</td>
+                            <td>
+                                <button type="button" class="btn btn-danger"><a href="">Eliminar</a></button>
+                                <button type="button" class="btn btn-primary"><a href="{{ action('MasterController@editarTareas') }}">Editar</a></button>
+                            </td>
                         </tr>
                         <tr>
                             <td>70</td>
@@ -75,6 +80,10 @@
                             <td>Chevrolet Corvette</td>
                             <td>Juan Guzmán</td>
                             <td>Morpheus</td>
+                            <td>
+                                <button type="button" class="btn btn-danger"><a href="">Eliminar</a></button>
+                                <button type="button" class="btn btn-primary"><a href="{{ action('MasterController@editarTareas') }}">Editar</a></button>
+                            </td>
                         </tr>
 
                         </tbody>

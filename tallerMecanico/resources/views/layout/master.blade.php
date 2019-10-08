@@ -32,6 +32,7 @@
     <!-- bootstrap-daterangepicker -->
     <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
+
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
 </head>
@@ -74,14 +75,14 @@
                             </li>
                             <li><a><i class="fa fa-edit"></i> Gestión inventario <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Listado existencias</a></li>
-                                    <li><a href="#">Agregar existencias</a></li>
+                                    <li><a href="{{ action('MasterController@inventario') }}">Listado existencias</a></li>
+                                    <li><a href="{{ action('MasterController@addExistencia') }}">Agregar existencias</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-desktop"></i> Gestión servicios <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
                                     <li><a href="{{ action('MasterController@addServicio') }}">Crear nuevo servicio</a></li>
-                                    <li><a href="#">Servicios activos</a></li>
+{{--                                    <li><a href="#">Servicios activos</a></li>--}}
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-table"></i> Gestión personal <span class="fa fa-chevron-down"></span></a>

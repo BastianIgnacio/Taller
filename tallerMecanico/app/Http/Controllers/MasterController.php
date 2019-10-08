@@ -19,7 +19,7 @@ class MasterController extends Controller
     }
 
     public function addServicio(){
-        return view('addServicio.addServicio');
+        return view('gestionServicios.addServicio');
     }
 
     public function gestionarPermisos(){
@@ -28,6 +28,23 @@ class MasterController extends Controller
 
     public function dashboard(){
         return view('dashboard.dashboard');
+    }
+
+    public function inventario(){
+        return view('inventario.inventario');
+    }
+
+    public function addExistencia(){
+        return view('inventario.addExistencia');
+    }
+
+//    éste método debería recibir parametros !!!
+    public function editarTareas(){
+        return view('gestionServicios.editarTareas');
+    }
+
+    public function editarInsumosTarea(){
+        return view('gestionServicios.editarInsumosTarea');
     }
 
 }

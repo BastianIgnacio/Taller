@@ -24,3 +24,11 @@ Route::get('/gestionar-tecnicos', 'MasterController@gestionarTecnicos');
 Route::get('/gestionar-tecnicos/add-tecnico', 'MasterController@addTecnico');
 
 Route::get('/gestionar-tecnicos/editar-tecnico', 'MasterController@editarTecnico');
+
+Route::get('/inventario', 'MasterController@inventario');
+
+Route::get('/inventario/addExistencia', 'MasterController@addExistencia');
+
+Route::get('/gestionServicios/editarTareas', 'MasterController@editarTareas');
+
+Route::get('/gestionServicios/editarInsumosTarea', 'MasterController@editarInsumosTarea');
