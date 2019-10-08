@@ -18,6 +18,12 @@
     <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
     <!-- iCheck -->
     <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- Datatables -->
+    <link href="../vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <link href="../vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
 
     <!-- bootstrap-progressbar -->
     <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
@@ -26,6 +32,7 @@
     <!-- bootstrap-daterangepicker -->
     <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
+
     <!-- Custom Theme Style -->
     <link href="../build/css/custom.min.css" rel="stylesheet">
 </head>
@@ -33,10 +40,10 @@
 <body class="nav-md">
 <div class="container body">
     <div class="main_container">
-        <div class="col-md-3 left_col" style="position: relative;">
+        <div class="col-md-3 left_col" >
             <div class="left_col scroll-view">
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="#" class="site_title"> <i class="fa fa-wrench" aria-hidden="true"></i>
+                    <a href="{{ action('MasterController@dashboard') }}" class="site_title"> <i class="fa fa-wrench" aria-hidden="true"></i>
                         <span>Taller</span></a>
                 </div>
 
@@ -63,30 +70,30 @@
                         <ul class="nav side-menu">
                             <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Dashboard</a></li>
+                                    <li><a href={{ action('MasterController@dashboard') }}>Dashboard</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-edit"></i> Gestión inventario <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Listado existencias</a></li>
-                                    <li><a href="#">Agregar existencias</a></li>
+                                    <li><a href="{{ action('MasterController@inventario') }}">Listado existencias</a></li>
+                                    <li><a href="{{ action('MasterController@addExistencia') }}">Agregar existencias</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-desktop"></i> Gestión servicios <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Crear nuevo sercvicio</a></li>
-                                    <li><a href="#">Servicios activos</a></li>
+                                    <li><a href="{{ action('MasterController@addServicio') }}">Crear nuevo servicio</a></li>
+{{--                                    <li><a href="#">Servicios activos</a></li>--}}
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-table"></i> Gestión personal <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Nómina</a></li>
-                                    <li><a href="#">Agregar personal</a></li>
+                                    <li><a href="{{ action('GestionTecnicosController@index') }}">Nómina</a></li>
+                                    <li><a href="{{ action('MasterController@addTecnico') }}">Agregar personal</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-bar-chart-o"></i> Gestionar Permisos <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Nómina permisos</a></li>
+                                    <li><a href="{{ action('MasterController@gestionarPermisos') }}">Nómina permisos</a></li>
                                 </ul>
                             </li>
                             <li><a><i class="fa fa-clone"></i>Gestión proveedores <span class="fa fa-chevron-down"></span></a>
@@ -125,11 +132,19 @@
                 </nav>
             </div>
         </div>
-    </div>
         <!-- /top navigation -->
-
-<div>
-    @yield('content')
+        <div class="right_col" role="main">
+            <div class="">
+                @yield('content')
+            </div>
+        </div>
+        <footer>
+            <div class="pull-right">
+                Team 'Los Fletos' - 2019
+            </div>
+            <div class="clearfix"></div>
+        </footer>
+    </div>
 </div>
 
 <!-- jQuery -->
@@ -169,9 +184,31 @@
 <!-- bootstrap-daterangepicker -->
 <script src="../vendors/moment/min/moment.min.js"></script>
 <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-
+<!-- jQuery Sparklines -->
+<script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
 <!-- Custom Theme Scripts -->
 <script src="../build/js/custom.min.js"></script>
+<!-- jQuery Smart Wizard -->
+<script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+<!-- Datatables -->
+<script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+<script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+<script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+<script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+<script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+<script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+<script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+<script src="../vendors/jszip/dist/jszip.min.js"></script>
+<script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+<script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+
+
+
 
 </body>
 </html>

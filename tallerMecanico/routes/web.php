@@ -11,42 +11,26 @@
 |
 */
 
-Route::group(['middleware' => ['guest']], function () {
-      Route::get('/login', function () { return view('login/login');})->name('login');
-      Route::get('/', function () { return view('login/login');})->name('login');
-});
+Route::get('/', 'MasterController@dashboard');
 
-Route::group(['middleware' => ['auth']], function () {
-    Route::get('/', function () {
-        return view('login/login');
-    });
-  
-    Route::get('/main', function () {
-      return view('Main/main');
-    });
-  
-    Route::get('/add-servicio', function () {
-      return view('addServicio/addServicio');
-    });
-  
-  Route::get('/dashboard', function () {
-      return view('dashboard/dashboard');
-  });
-  
-  Route::get('/gestionar-permisos', function () {
-      return view('gestionarPermisos/gestionarPermisos');
-  });
-  
-  Route::get('/gestionar-tecnicos', function () {
-      return view('gestionarTecnicos/gestionarTecnicos');
-  });
-  
-  Route::get('/gestionar-tecnicos/add-tecnico', function () {
-      return view('gestionarTecnicos/addTecnico');
-  });
-  
-  Route::get('/gestionar-tecnicos/editar-tecnico', function () {
-      return view('gestionarTecnicos/editarTecnico');
-  });
-});
+Route::get('/add-servicio', 'MasterController@addServicio');
 
+Route::get('/dashboard', 'MasterController@dasboard');
+
+Route::get('/gestionar-permisos', 'MasterController@gestionarPermisos');
+
+Route::get('/gestionar-tecnicos', 'GestionTecnicosController@index');
+
+Route::get('/gestionar-tecnicos/add-tecnico', 'MasterController@addTecnico');
+Route::post('/gestionar-tecnicos/add-tecnico', 'addTecnicosController@addTecnico');
+
+
+Route::get('/gestionar-tecnicos/editar-tecnico', 'MasterController@editarTecnico');
+
+Route::get('/inventario', 'MasterController@inventario');
+
+Route::get('/inventario/addExistencia', 'MasterController@addExistencia');
+
+Route::get('/gestionServicios/editarTareas', 'MasterController@editarTareas');
+
+Route::get('/gestionServicios/editarInsumosTarea', 'MasterController@editarInsumosTarea');

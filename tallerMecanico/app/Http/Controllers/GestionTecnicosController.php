@@ -3,27 +3,33 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\DB;
 
 class GestionTecnicosController extends Controller
 {
     //
+    public function index()
+    {
+        $tecnicos = \DB::table('tecnico')->get();
+       // return $tecnicos;
+        return view('gestionarTecnicos.gestionarTecnicos')->with("tecnicos", $tecnicos);
+       
+
+    }
     public function eliminarTecnico(Request $request)
     {
         $rut = $request->input("rut");
         DB::table('tecnico')->where('rut', '=', $rut)->delete();
     }
 
-    public function getTecnicos()
-    {
-        $tecnicos = DB::table('tecnico')->get();
-        return $tecnicos;
 
-    }
-     
-    public function getTecnico(Request $request)
+    public function getTecnico($rut)
     {
-        $rut = $request->input("rut");
+        
         $tecnico = DB::table('tecnico')->where('rut', '=', $rut)->get();
         return $tecnico;
     }
+
+   
+
 }

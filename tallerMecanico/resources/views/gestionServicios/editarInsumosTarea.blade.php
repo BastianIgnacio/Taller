@@ -2,6 +2,6 @@
 
 @section('content')
 
-    <h1>gestionar permisos</h1>
+    <h1>Editar insumos tareas</h1>
 
 @stop
