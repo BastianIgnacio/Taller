@@ -30,11 +30,12 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <form class="form-group">
+            <form class="form-group" method="POST" action="/login">
+             @csrf
               <h1>Login</h1>
               <div class="separator">
               <div>
-              <select  class="form-control">
+              <select class="form-control" name="rol" >
                             <option>Administrador</option>
                             <option>Secretaria</option>
                             <option>Encargado Pañol</option>
@@ -42,14 +43,14 @@
               </div>
               <div class="separator">
               <div>
-                <input type="text" class="form-control" placeholder="Email de usuario" required="" />
+                <input type="text" class="form-control" placeholder="Email de usuario" name="email" />
               </div>
               <div>
-                <input type="password" class="form-control" placeholder="Contraseña" required="" />
+                <input type="password" class="form-control" placeholder="Contraseña" name="password"  />
               </div>
               <div>
-                <a class="btn btn-default submit" href="index.html">Entrar</a>
-                <a class="reset_pass" href="#">Olvido su contraseña?</a>
+                <button class="btn btn-default submit" type="submit" >Entrar</button>
+                <a class="reset_pass"> Olvido su contraseña?</a>
               </div>
 
               <div class="clearfix"></div>
