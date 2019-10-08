@@ -46,7 +46,7 @@
                     <div class="clearfix"></div>
                 </div>
                 <button type="button" class="btn btn-default">
-                    <a href="{{ action('MasterController@addServicio') }}">
+                    <a href="{{ action('AddServicioController@index') }}">
                         Agregar Servicio
                     </a>
                 </button>

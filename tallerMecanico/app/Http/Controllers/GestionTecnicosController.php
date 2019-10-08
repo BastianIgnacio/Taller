@@ -13,13 +13,16 @@ class GestionTecnicosController extends Controller
         $tecnicos = \DB::table('tecnico')->get();
        // return $tecnicos;
         return view('gestionarTecnicos.gestionarTecnicos')->with("tecnicos", $tecnicos);
-       
-
     }
+    
     public function eliminarTecnico(Request $request)
     {
         $rut = $request->input("rut");
-        DB::table('tecnico')->where('rut', '=', $rut)->delete();
+       
+        \DB::table('tecnico')->where('rut', '=', $rut)->delete();
+        $tecnicos = \DB::table('tecnico')->get();
+       // return $tecnicos;
+        return view('gestionarTecnicos.gestionarTecnicos')->with("tecnicos", $tecnicos);
     }
 
 

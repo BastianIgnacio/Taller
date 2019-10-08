@@ -81,7 +81,7 @@
                             </li>
                             <li><a><i class="fa fa-desktop"></i> Gestión servicios <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="{{ action('MasterController@addServicio') }}">Crear nuevo servicio</a></li>
+                                    <li><a href="{{ action('AddServicioController@index') }}">Crear nuevo servicio</a></li>
 {{--                                    <li><a href="#">Servicios activos</a></li>--}}
                                 </ul>
                             </li>

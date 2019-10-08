@@ -22,19 +22,26 @@
                             <th>Correo</th>
                             <th>Acciones</th>
                         </tr>
-                        @foreach ($tecnicos as $t)
-                        <tr>
-                            <th>{{$t->rut}}</th>
-                            <th>{{$t->primernombre}}</th>
-                            <th>{{$t->primerapellido}}</th>
-                            <th>{{$t->numerocontacto}}</th>
-                            <th>{{$t->correo}}</th>
-                            <th><button type="button" class="btn btn-warning">Editar</button></th>
-                        </tr>
-                        @endforeach
-
-
                         </thead>
+                        <tbody>
+                            @foreach ($tecnicos as $t)
+                            <tr>
+                                <td>{{$t->rut}}</td>
+                                <td>{{$t->primernombre}}</td>
+                                <td>{{$t->primerapellido}}</td>
+                                <td>{{$t->numerocontacto}}</td>
+                                <td>{{$t->correo}}</td>
+                                <td>
+                                    
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                    <form action="gestionar-tecnicos/eliminar-tecnico" method="POST">
+                                    @csrf
+                                        <button type="submit" name="rut" value="{{$t->rut}}" class="btn btn-danger" > Eliminar </button>
+                                    </form>
+                                </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
                     </table>
                 </div>
             </div>

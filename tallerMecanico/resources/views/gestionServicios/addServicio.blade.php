@@ -90,9 +90,6 @@
                                             <input id="numero" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
                                         </div>
                                     </div>
-
-
-
                                 </form>
                             </div>
                             <div id="step-2">
@@ -147,6 +144,18 @@
                                                 <th>Seleccionar</th>
                                             </tr>
                                         </thead>
+                                        <tbody>
+                                        @foreach ($tecnicos as $t)
+                                         <tr>
+                                            <td>{{$t->rut}}</td>
+                                            <td>{{$t->primernombre}}</td>
+                                            <td>{{$t->primerapellido}}</td>
+                                            <td>{{$t->numerocontacto}}</td>
+                                            <td>{{$t->correo}}</td>
+                                            <td><button type="button" class="btn btn-warning">Editar</button></td>
+                                        </tr>
+                                        @endforeach
+                                        </tbody>
                                     </table>
                                 </div>
                             </div>

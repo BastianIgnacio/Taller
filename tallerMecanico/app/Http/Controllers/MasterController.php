@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 
 class MasterController extends Controller
 {
-    public function addTecnico(){
+    public function addTecnico()
+    {
         return view('gestionarTecnicos.addTecnico');
     }
 

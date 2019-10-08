@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\DB;
+use Illuminate\Database\QueryException;
 
 class AddTecnicosController extends Controller
 {
@@ -19,12 +20,20 @@ class AddTecnicosController extends Controller
         $numeroContacto = $request->input("numerocontacto");
         $correo = $request->input("correo");
 
-        \DB::table('tecnico')->insert(
+        try { 
+        //Your code
+            \DB::table('tecnico')->insert(
             ['rut' => $rut, 'primernombre' => $primerNombre , 'segundonombre' => $segundoNombre ,
             'primerapellido' => $primerApellido, 'segundoapellido' => $segundoApellido, 
             'numerocontacto' => $numeroContacto, 'correo' => $correo]
         );
-        return view('gestionarTecnicos.gestionarTecnicos');
+        } catch(QueryException $ex){ 
+            dd($ex->getMessage()); 
+        }
+        
+        $tecnicos = \DB::table('tecnico')->get();
+       // return $tecnicos;
+        return view('gestionarTecnicos.gestionarTecnicos')->with("tecnicos", $tecnicos);
     }
     
 }
