@@ -9,7 +9,7 @@
       <div class="">
         <div class="x_panel">
           <div class="x_title">
-            <h2>Agregar Proveedor</h2>            
+            <h2>Agregar al Inventario</h2>            
             <div class="clearfix"></div>
           </div>
           <div class="x_content">
@@ -24,32 +24,32 @@
                 </div>
               </div>
               <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Apellido <span class="required"></span>
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">Proveedor <span class="required"></span>
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input type="text" id="apellido" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                  <input type="text" id="proveedor" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
                 </div>
               </div>
               <div class="form-group">
-                <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">RUT</label>
+                <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">Cantidad</label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input id="rut" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12">Numero<span class="required"></span>
-                </label>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input id="numero" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                  <input id="cantidad" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
                 </div>
               </div>
 
               <div class="form-group">
-                <label class="control-label col-md-3 col-sm-3 col-xs-12">Productos<span class="required"></span>
+                <label class="control-label col-md-3 col-sm-3 col-xs-12">Modelo<span class="required"></span>
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input id="productos" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                  <input id="modelo" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12">Fabricante<span class="required"></span>
+                </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <input id="fabricante" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
                 </div>
               </div>
 
