@@ -25,7 +25,6 @@ class GestionTecnicosController extends Controller
         return view('gestionarTecnicos.gestionarTecnicos')->with("tecnicos", $tecnicos);
     }
 
-
     public function getTecnico($rut)
     {
         

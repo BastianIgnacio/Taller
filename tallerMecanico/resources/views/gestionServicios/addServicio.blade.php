@@ -145,6 +145,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
+                                        <p>
                                         @foreach ($tecnicos as $t)
                                          <tr>
                                             <td>{{$t->rut}}</td>
@@ -152,9 +153,12 @@
                                             <td>{{$t->primerapellido}}</td>
                                             <td>{{$t->numerocontacto}}</td>
                                             <td>{{$t->correo}}</td>
-                                            <td><button type="button" class="btn btn-warning">Editar</button></td>
+                                            <td>
+                                                <input type="radio" class="flat" name="gender" id="genderM" value="M" checked="" required />
+                                            </td>
                                         </tr>
                                         @endforeach
+                                        </p>
                                         </tbody>
                                     </table>
                                 </div>
