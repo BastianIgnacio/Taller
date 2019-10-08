@@ -52,6 +52,7 @@
                                     </a>
                                 </li>
                             </ul>
+                            
                             <div id="step-1">
                                 <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                                     <div class="form-group">
@@ -93,6 +94,7 @@
                                 </form>
                             </div>
                             <div id="step-2">
+                            
                                 <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
 
                                     <div class="form-group">
@@ -124,10 +126,8 @@
                                             <input id="año" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
                                         </div>
                                     </div>
-
-
-
                                 </form>
+
                             </div>
                             <div id="step-3">
                                 <div class="x_content">
@@ -163,6 +163,7 @@
                                     </table>
                                 </div>
                             </div>
+                            
 
                         </div>
                         <!-- End SmartWizard Content -->

@@ -23,8 +23,9 @@ Route::get('/gestionar-tecnicos', 'GestionTecnicosController@index');
 
 Route::get('/gestionar-tecnicos/add-tecnico', 'MasterController@addTecnico');
 Route::post('/gestionar-tecnicos/add-tecnico', 'addTecnicosController@addTecnico');
-
 Route::post('/gestionar-tecnicos/eliminar-tecnico', 'GestionTecnicosController@eliminarTecnico');
+
+
 
 Route::get('/gestionar-tecnicos/editar-tecnico', 'MasterController@editarTecnico');
 
