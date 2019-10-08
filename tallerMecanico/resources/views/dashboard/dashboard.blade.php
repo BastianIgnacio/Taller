@@ -45,6 +45,11 @@
                     <h2>Historial de Servicios</h2>
                     <div class="clearfix"></div>
                 </div>
+                <button type="button" class="btn btn-default">
+                    <a href="{{ action('MasterController@addServicio') }}">
+                        Agregar Servicio
+                    </a>
+                </button>
                 <div class="x_content">
                     <table id="datatable-fixed-header" class="table table-striped table-bordered">
                         <thead>
