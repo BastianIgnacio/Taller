@@ -6,7 +6,7 @@
         <div class="">
             <div class="x_panel">
                 <div class="x_title">
-                    <h2>Listado de Tecnicos</h2>
+                    <h2>Lista Inventario</h2>
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
@@ -15,12 +15,12 @@
                     <table id="datatable" class="table table-striped table-bordered">
                         <thead>
                         <tr>
-                            <th>Rut</th>
                             <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Contacto</th>
-                            <th>Correo</th>
-                            <th>Editar</th>
+                            <th>Proveedor</th>
+                            <th>Stock</th>
+                            <th>Costo</th>
+                            <th>Modelo</th>
+                            <th>Fabricante</th>
                         </tr>
                         </thead>
                     </table>
