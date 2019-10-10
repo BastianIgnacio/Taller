@@ -47,7 +47,16 @@
                                         <span class="step_no">3</span>
                                         <span class="step_descr">
                                             Tecnico<br />
-                                            <small>Ingrese un tecnico en jefe</small>
+                                            <small>Ingresar un tecnico en jefe</small>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#step-4">
+                                        <span class="step_no">4</span>
+                                        <span class="step_descr">
+                                            Detalles<br />
+                                            <small>Registrar informacion adicional</small>
                                         </span>
                                     </a>
                                 </li>
@@ -163,7 +172,37 @@
                                     </table>
                                 </div>
                             </div>
-                            
+                            <div id="step-4">
+                                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="patente-auto">Tipo de Servicio <span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="tipo_servicio" required="required" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="modelo-auto">Fecha<span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="fecha_servicio" required="required" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12">Descripcion<span class="required"></span>
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input id="descripcion_servicio" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                        </div>
+                                    </div>
+
+                                    
+
+
+
+                                </form>
+                            </div>
 
                         </div>
                         <!-- End SmartWizard Content -->
