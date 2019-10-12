@@ -32,3 +32,9 @@ Route::get('/inventario/addExistencia', 'MasterController@addExistencia');
 Route::get('/gestionServicios/editarTareas', 'MasterController@editarTareas');
 
 Route::get('/gestionServicios/editarInsumosTarea', 'MasterController@editarInsumosTarea');
+
+Route::get('/gestionarProveedores', 'MasterController@gestionarProveedores');
+
+Route::get('/gestionarProveedores/addProveedor', 'MasterController@addProveedor');
+
+Route::get('/gestionarProveedores/editarProveedor', 'MasterController@editarProveedor');

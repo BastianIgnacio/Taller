@@ -47,4 +47,16 @@ class MasterController extends Controller
         return view('gestionServicios.editarInsumosTarea');
     }
 
+    public function gestionarproveedores(){
+        return view('gestionarProveedores.gestionarProveedores');
+    }
+
+    public function addProveedor(){
+        return view('gestionarProveedores.addProveedores');
+    }
+
+    public function editarProveedor(){
+        return view('gestionarProveedores.editarProveedor');
+    }
+
 }

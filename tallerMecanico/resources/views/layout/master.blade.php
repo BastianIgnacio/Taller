@@ -98,8 +98,8 @@
                             </li>
                             <li><a><i class="fa fa-clone"></i>Gestión proveedores <span class="fa fa-chevron-down"></span></a>
                                 <ul class="nav child_menu">
-                                    <li><a href="#">Nómina proveedores</a></li>
-                                    <li><a href="#">Agregar proveedor</a></li>
+                                    <li><a href="{{ action('MasterController@gestionarProveedores') }}">Nómina proveedores</a></li>
+                                    <li><a href="{{ action('MasterController@addProveedor') }}">Agregar proveedor</a></li>
                                 </ul>
                             </li>
                         </ul>
