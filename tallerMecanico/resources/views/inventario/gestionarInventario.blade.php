@@ -10,8 +10,11 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                    <p class="text-muted font-13 m-b-30">
-                    </p>
+                    <button type="button" class="btn btn-default">
+                        <a href="{{ action('MasterController@addInventario') }}">
+                            Agregar Existencia
+                        </a>
+                    </button>
                     <table id="datatable" class="table table-striped table-bordered">
                         <thead>
                         <tr>
