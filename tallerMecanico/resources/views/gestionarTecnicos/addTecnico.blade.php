@@ -30,7 +30,7 @@
               <div class="form-group">
                 <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">RUT</label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input id="rut"  name="rut" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                  <input id="rut"  name="rut" class="form-control col-md-7 col-xs-12" type="text" name="middle-name" data-inputmask="'mask': '99.999.999'">
                 </div>
               </div>
 
@@ -38,7 +38,7 @@
                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Correo<span class="required"></span>
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input id="correo"  name="correo" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                  <input type="email" id="correo" class="form-control" name="correo" data-parsley-trigger="change" required />
                 </div>
               </div>
 
@@ -46,7 +46,8 @@
                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Numero<span class="required"></span>
                 </label>
                 <div class="col-md-6 col-sm-6 col-xs-12">
-                  <input id="numero" name="numerocontacto" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+      
+                  <input id="numero" name="numerocontacto" type="text" class="form-control" data-inputmask="'mask': '999-99999999'">
                 </div>
               </div>
               <div class="ln_solid"></div>
@@ -62,4 +63,5 @@
         </div>
       </div>
     </div>
+    
 @stop
