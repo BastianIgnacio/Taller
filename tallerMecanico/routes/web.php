@@ -25,6 +25,14 @@ Route::get('/gestionar-tecnicos/add-tecnico', 'MasterController@addTecnico');
 
 Route::get('/gestionar-tecnicos/editar-tecnico', 'MasterController@editarTecnico');
 
+Route::get('/gestionar-proveedores/lista-proveedores', 'MasterController@gestionarProveedores');
+
+Route::get('gestionar-proveedores/add-proveedor', 'MasterController@addProveedor');
+
+Route::get('gestionar-inventario/lista-inventario', 'MasterController@gestionarInventario');
+
+Route::get('/gestionar-inventario/add-inventario', 'MasterController@addInventario');
+
 Route::get('/inventario', 'MasterController@inventario');
 
 Route::get('/inventario/addExistencia', 'MasterController@addExistencia');

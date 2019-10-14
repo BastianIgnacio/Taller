@@ -30,6 +30,20 @@ class MasterController extends Controller
         return view('dashboard.dashboard');
     }
 
+    public function addProveedor(){
+        return view('gestionarProveedores.addProveedor');
+    }
+
+    public function gestionarProveedores(){
+        return view('gestionarProveedores.gestionarProveedores');
+    }
+    public function gestionarInventario(){
+        return view('inventario.gestionarInventario');
+    }
+
+    public function addInventario(){
+        return view('inventario.addInventario');
+    }
     public function inventario(){
         return view('inventario.inventario');
     }
