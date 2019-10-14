@@ -141,6 +141,7 @@
                             <div id="step-3">
                                 <div class="x_content">
                                     <p class="text-muted font-13 m-b-30">
+                                    <h2>Seleccionar Tecnico</h2>
                                     </p>
                                     <table id="datatable" class="table table-striped table-bordered">
                                         <thead>
