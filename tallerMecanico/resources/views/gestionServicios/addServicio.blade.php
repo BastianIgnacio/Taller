@@ -180,7 +180,11 @@
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12" for="patente-auto">Tipo de Servicio <span class="required"></span>
                                         </label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input type="text" id="tipo_servicio" required="required" class="form-control col-md-7 col-xs-12">
+                                            <select class="form-control">
+                                                <option>Mantención</option>
+                                                <option>Reparación</option>
+                                                <option>Mantención y Reparación</option>
+                                            </select>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -194,7 +198,7 @@
                                         <label class="control-label col-md-3 col-sm-3 col-xs-12">Descripcion<span class="required"></span>
                                         </label>
                                         <div class="col-md-6 col-sm-6 col-xs-12">
-                                            <input id="descripcion_servicio" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                                        <textarea class="resizable_textarea form-control" placeholder="Descripción adicional"></textarea>
                                         </div>
                                     </div>
 

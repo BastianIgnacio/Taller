@@ -62,4 +62,13 @@ class MasterController extends Controller
         return view('gestionServicios.editarInsumosTarea');
     }
 
+    public function ajaxRequestPost(Request $request)
+
+    {
+
+        $input = $request->all();
+
+        return response()->json(['success'=>'Got Simple Ajax Request.']);
+
+    }
 }
