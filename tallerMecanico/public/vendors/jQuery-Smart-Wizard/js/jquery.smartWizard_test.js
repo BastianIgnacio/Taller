@@ -69,13 +69,22 @@ function SmartWizard(target, options) {
         $($this.buttons.finish).click(function() {
             if(!$(this).hasClass('buttonDisabled')){
                 if($.isFunction($this.options.onFinish)) {
+                    
                     var context = { fromStep: $this.curStepIdx + 1 };
                     if(!$this.options.onFinish.call(this,$($this.steps), context)){
                         return false;
                     }
                 }else{
+                    var opc = document.getElementById("ano").value;
+                    var textarea= document.getElementById("des_area").value;
+
+
+                    console.log(opc);
+                    console.log(textarea);
+
                     var frm = $this.target.parents('form');
                     if(frm && frm.length){
+                        console.log("x aca tbb");
                         frm.submit();
                     }
                 }
