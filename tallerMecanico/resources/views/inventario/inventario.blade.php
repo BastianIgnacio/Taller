@@ -24,13 +24,7 @@
                         <div class="col-md-12 col-xs-12">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Codigo</label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                <select class="form-control">
-                                <option>Choose option</option>
-                                <option>Option one</option>
-                                <option>Option two</option>
-                                <option>Option three</option>
-                                <option>Option four</option>
-                                </select>
+                                <input type="text" id="modelo_auto" required="required" class="form-control col-md-7 col-xs-12">
                             </div>
                         </div>
                     </form>
@@ -43,14 +37,14 @@
                 </div>
             </div>  
 
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Agregar Exist2encia</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Extraer Existencia</button>
             <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
                         </button>
-                        <h4 class="modal-title" id="myModalLabel">Agregar Existencia22222</h4>
+                        <h4 class="modal-title" id="myModalLabel">Extraer Existencia</h4>
                     </div>
                     <div class="modal-body">
                     <form>
@@ -58,20 +52,14 @@
                         <div class="col-md-12 col-xs-12">
                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Codigo</label>
                             <div class="col-md-9 col-sm-9 col-xs-12">
-                                <select class="form-control">
-                                <option>Choose option</option>
-                                <option>Option one</option>
-                                <option>Option two</option>
-                                <option>Option three</option>
-                                <option>Option four</option>
-                                </select>
+                                <input type="text" id="modelo_auto" required="required" class="form-control col-md-7 col-xs-12">
                             </div>
                         </div>
                     </form>
                     </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Agregar</button>
+                            <button type="button" class="btn btn-primary">Extraer</button>
                         </div>
                     </div>
                 </div>

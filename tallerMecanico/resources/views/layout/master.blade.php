@@ -86,7 +86,7 @@
                                 <li><a><i class="fa fa-edit"></i> Gestión inventario <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="{{ action('MasterController@inventario') }}">Listado existencias</a></li>
-                                        <li><a href="{{ action('MasterController@addInventario') }}">Agregar existencias</a></li>
+                                        <li><a href="{{ action('MasterController@addInventario') }}">Agregar nuevo Insumo</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-desktop"></i> Gestión servicios <span class="fa fa-chevron-down"></span></a>
