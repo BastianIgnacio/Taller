@@ -74,8 +74,9 @@
                             <td>Juan Pérez</td>
                             <td>Mr. Anderson</td>
                             <td>
-                                <button type="button" class="btn btn-danger"><a href="">Eliminar</a></button>
-                                <button type="button" class="btn btn-primary"><a href="{{ action('MasterController@editarTareas') }}">Editar</a></button>
+                                <button type="button" tittle="gg" class="btn btn-success fa fa-check-square "></button>
+                                <button type="button" class="btn btn-primary fa fa-cog"></button>
+                                
                             </td>
                         </tr>
                         <tr>
@@ -86,8 +87,9 @@
                             <td>Juan Guzmán</td>
                             <td>Morpheus</td>
                             <td>
-                                <button type="button" class="btn btn-danger"><a href="">Eliminar</a></button>
-                                <button type="button" class="btn btn-primary"><a href="{{ action('MasterController@editarTareas') }}">Editar</a></button>
+                                <button type="button" class="btn btn-success fa fa-check-square "></button>
+                                <button type="button" class="btn btn-primary fa fa-cog"></button>
+                                
                             </td>
                         </tr>
 
