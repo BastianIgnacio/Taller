@@ -38,6 +38,11 @@ class MasterController extends Controller
     public function gestionarProveedores(){
         return view('gestionarProveedores.gestionarProveedores');
     }
+
+    public function editarProveedor(){
+        return view('gestionarProveedores.editarProveedor');
+    }
+
     public function gestionarInventario(){
         return view('inventario.gestionarInventario');
     }

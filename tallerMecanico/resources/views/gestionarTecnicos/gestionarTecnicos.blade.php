@@ -2,8 +2,6 @@
 
 @section('content')
 
-    <div class="row">
-        <div class="">
         <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="x_panel">
                 <div class="x_title">
@@ -11,8 +9,11 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                    <p class="text-muted font-13 m-b-30">
-                    </p>
+                    <button type="button" class="btn btn-default">
+                        <a href="{{ action('MasterController@addTecnico') }}">
+                            Agregar Técnico
+                        </a>
+                    </button>
                     <table id="datatable" class="table table-striped table-bordered">
                         <thead>
                         <tr>
@@ -51,8 +52,6 @@
                     </table>
                 </div>
             </div>
-        </div>
-    </div>
 
     <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>

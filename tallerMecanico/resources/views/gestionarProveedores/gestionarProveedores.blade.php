@@ -2,33 +2,59 @@
 
 @section('content')
 
-<div class="row">
-  <div class="col-md-12 col-sm-12 col-xs-12">
-    <div class="x_panel">
-      <div class="x_title">
-        <h2>Listado de Proveedores</h2>        
-        <div class="clearfix"></div>
-      </div>
-      <div class="x_content">
-        <p class="text-muted font-13 m-b-30">
-        </p>
-        <table id="datatable" class="table table-striped table-bordered">
-          <thead>
-            <tr>
-              <th>Rut</th>
-              <th>Nombre</th>
-              <th>Apellido</th>
-              <th>Contacto</th>
-              <th>Producto</th>
-              <th>Editar</th>
-            </tr>
-          </thead>
+    {{--    begin table --}}
+
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>Nónima Proveedores</h2>
+                <div class="clearfix"></div>
+            </div>
+            <button type="button" class="btn btn-default">
+                <a href="{{ action('MasterController@addProveedor') }}">
+                    Agregar Proveedor
+                </a>
+            </button>
+            <div class="x_content">
+                <table id="datatable-fixed-header" class="table table-striped table-bordered">
+                    <thead>
+                    <tr>
+                        <th>Rut</th>
+                        <th>Razón Social</th>
+                        <th>Giro</th>
+                        <th>Contacto</th>
+                        <th>Acciones</th>
+                    </tr>
+                    </thead>
 
 
+                    <tbody>
+                    <tr>
+                        <td>69.669.669-9</td>
+                        <td>Empresa X</td>
+                        <td>Venta de balatas</td>
+                        <td>5555riente</td>
+                        <td>
+                            <button type="button" class="btn btn-danger"><a href="">Eliminar</a></button>
+                            <button type="button" class="btn btn-primary"><a href="{{ action('MasterController@editarProveedor') }}">Editar</a></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>69.669.669-9</td>
+                        <td>Empresa Y</td>
+                        <td>Venta de tubos de escape</td>
+                        <td>5555riente</td>
+                        <td>
+                            <button type="button" class="btn btn-danger"><a href="">Eliminar</a></button>
+                            <button type="button" class="btn btn-primary"><a href="{{ action('MasterController@editarProveedor') }}">Editar</a></button>
+                        </td>
+                    </tr>
 
-        </table>
-      </div>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
+    {{--    end of table--}}
+
 @stop

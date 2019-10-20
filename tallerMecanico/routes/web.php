@@ -45,6 +45,12 @@ Route::get('/gestionServicios/editarTareas', 'MasterController@editarTareas');
 
 Route::get('/gestionServicios/editarInsumosTarea', 'MasterController@editarInsumosTarea');
 
+Route::get('/gestionarProveedores', 'MasterController@gestionarProveedores');
+
+Route::get('/gestionarProveedores/addProveedor', 'MasterController@addProveedor');
+
+Route::get('/gestionarProveedores/editarProveedor', 'MasterController@editarProveedor');
+
 Route::get('/404', function() {return view('errores.error404');});
 Route::get('/403', function() {return view('errores.error403');});
 Route::get('/500', function() {return view('errores.error500');});
