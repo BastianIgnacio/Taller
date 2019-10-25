@@ -35,8 +35,9 @@
                         <td>Venta de balatas</td>
                         <td>5555riente</td>
                         <td>
-                            <button type="button" class="btn btn-danger"><a href="">Eliminar</a></button>
-                            <button type="button" class="btn btn-primary"><a href="{{ action('MasterController@editarProveedor') }}">Editar</a></button>
+                            
+                            <button type="button" class="btn btn-warning fa fa-edit "><a href="{{ action('MasterController@editarProveedor') }}"></a></button>
+                            <button type="button" class="btn btn-danger fa fa-remove "><a href=""></a></button>
                         </td>
                     </tr>
                     <tr>
@@ -45,8 +46,8 @@
                         <td>Venta de tubos de escape</td>
                         <td>5555riente</td>
                         <td>
-                            <button type="button" class="btn btn-danger"><a href="">Eliminar</a></button>
-                            <button type="button" class="btn btn-primary"><a href="{{ action('MasterController@editarProveedor') }}">Editar</a></button>
+                            <button type="button" class="btn btn-warning fa fa-edit "><a href="{{ action('MasterController@editarProveedor') }}"></a></button>
+                            <button type="button" class="btn btn-danger fa fa-remove "><a href=""></a></button>
                         </td>
                     </tr>
 
