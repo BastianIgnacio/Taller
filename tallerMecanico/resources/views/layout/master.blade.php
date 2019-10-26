@@ -108,7 +108,7 @@
                                 <li><a><i class="fa fa-edit"></i> Gestión inventario <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
                                         <li><a href="/inventario">Listado existencias</a></li>
-                                        <li><a href="">Agregar nuevo Insumo</a></li>
+                                        <li><a href="/gestionar-inventario/add-inventario">Agregar nuevo Insumo</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-desktop"></i> Gestión servicios <span class="fa fa-chevron-down"></span></a>

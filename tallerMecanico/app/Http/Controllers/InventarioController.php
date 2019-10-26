@@ -69,6 +69,10 @@ class InventarioController extends Controller
         } catch(QueryException $ex){ 
             return redirect('/gestionar-inventario/add-inventario')->withErrors(['Problema al ingresar']);
         }
+
+        return redirect('/gestionar-inventario/add-inventario')->with('message', 'Insumo ingresado con exito!');
+
+
     }
 
     public function agregarExistencias()
