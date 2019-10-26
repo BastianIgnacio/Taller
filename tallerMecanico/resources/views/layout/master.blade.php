@@ -107,8 +107,8 @@
                                 </li>
                                 <li><a><i class="fa fa-edit"></i> Gestión inventario <span class="fa fa-chevron-down"></span></a>
                                     <ul class="nav child_menu">
-                                        <li><a href="{{ action('MasterController@inventario') }}">Listado existencias</a></li>
-                                        <li><a href="{{ action('MasterController@addInventario') }}">Agregar nuevo Insumo</a></li>
+                                        <li><a href="/inventario">Listado existencias</a></li>
+                                        <li><a href="">Agregar nuevo Insumo</a></li>
                                     </ul>
                                 </li>
                                 <li><a><i class="fa fa-desktop"></i> Gestión servicios <span class="fa fa-chevron-down"></span></a>
@@ -158,52 +158,12 @@
                                 <ul class="dropdown-menu dropdown-usermenu pull-right">
                                     <li><a href="javascript:;"> Perfil </a></li>
                                     <li><a href="#"><i class="fa fa-sign-out pull-right"></i> Cerrar sesión </a></li>
-                <!-- /menu profile quick info -->
-
-                <br />
-
-                <!-- sidebar menu -->
-                <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
-                    <div class="menu_section">
-                        <h3>General</h3>
-                        <ul class="nav side-menu">
-                            <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href={{ action('MasterController@dashboard') }}>Dashboard</a></li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-edit"></i> Gestión inventario <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="{{ action('MasterController@inventario') }}">Listado existencias</a></li>
-                                    <li><a href="{{ action('MasterController@addExistencia') }}">Agregar existencias</a></li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-desktop"></i> Gestión servicios <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="{{ action('AddServicioController@index') }}">Crear nuevo servicio</a></li>
-{{--                                    <li><a href="#">Servicios activos</a></li>--}}
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-table"></i> Gestión personal <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="{{ action('GestionTecnicosController@index') }}">Nómina</a></li>
-                                    <li><a href="{{ action('MasterController@addTecnico') }}">Agregar personal</a></li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-bar-chart-o"></i> Gestionar Permisos <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="{{ action('MasterController@gestionarPermisos') }}">Nómina permisos</a></li>
-                                </ul>
-                            </li>
-                            <li><a><i class="fa fa-clone"></i>Gestión proveedores <span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="{{ action('MasterController@gestionarProveedores') }}">Nómina proveedores</a></li>
-                                    <li><a href="{{ action('MasterController@addProveedor') }}">Agregar proveedor</a></li>
                                 </ul>
                             </li>
                         </ul>
                     </nav>
-                </div>
+                <br />
+            </div>
             </div>
             <!-- /top navigation -->
             <div class="right_col" role="main">
