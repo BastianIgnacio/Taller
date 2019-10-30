@@ -10,6 +10,15 @@
                 <h2>Inventario</h2>
                 <div class="clearfix"></div>
             </div>
+            @if ($errors->any())
+        <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+        </div>
+        @endif
 
              <!-- Large modal -->
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal1">Agregar Existencia</button>
@@ -22,7 +31,8 @@
                             <h4 class="modal-title" id="myModalLabel">Agregar Existencia</h4>
                         </div>
                         <div class="modal-body">
-                        <form>
+                        <form method="post" action="/agregarExistencias">
+                        @csrf
                             <div class="row">
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <div class="x_panel">
@@ -30,7 +40,7 @@
                                             <div class="col-md-12 col-xs-12">
                                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Codigo</label>
                                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                                    <input type="text" id="codigo_existencia" required="required" class="form-control col-md-7 col-xs-12">
+                                                    <input type="text" id="codigo_existencia" name="codigo" required="required" class="form-control col-md-7 col-xs-12">
                                                  </div>
                                                  <button type="button" id="botonInfo" class="btn btn-info">Info</button>
                                             </div>
@@ -66,7 +76,7 @@
                                             <div class="col-md-12 col-xs-12">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Cantidad a agregar</label>
                                                 <div class="col-md-2 col-sm-9 col-xs-12">
-                                                    <input type="text" id="cantidad_agregar"  required="required" data-inputmask="'mask': '9999'" class="form-control col-md-7 col-xs-12">
+                                                    <input type="text" id="cantidad_agregar" name="cantidad_agregar" required="required" data-inputmask="'mask': '9999'" class="form-control col-md-7 col-xs-12">
                                                  </div>
                                             </div>
                                         </div>
@@ -75,8 +85,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn btn-primary">Agregar</button>
+                            <button type="reset" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary">Agregar</button>
                         </div>
                     </form>
                     </div>
@@ -232,6 +242,10 @@ $(document).ready(function() {
             if(jQuery.isEmptyObject(data))
             {
                 console.log("Error");
+                $('#nombre_existencia').val("-No Existe-");
+                $('#marca_existencia').val("-No Existe-");
+                $('#modelo_existencia').val("-No Existe-");
+                $('#stock_actual').val("-No Existe-");
             }
             else{
                 var nombre = data['0'].nombre;
@@ -248,7 +262,6 @@ $(document).ready(function() {
         error: function() { 
         }
         });
-
     });
 });
 </script>
