@@ -14,7 +14,9 @@ class InventarioController extends Controller
 
     public function index()
     {
-        return view('inventario.inventario');
+        
+        $insumos = \DB::table('insumo')->select('codigo','marca','modelo','nombre','descripcion','cantidad')->get();
+        return view('inventario.inventario')->with('insumos', $insumos);
 
 
     }

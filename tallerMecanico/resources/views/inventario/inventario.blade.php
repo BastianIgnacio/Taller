@@ -1,5 +1,7 @@
 @extends('../layout.master')
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
 @section('content')
 
     <div class="col-md-12 col-sm-12 col-xs-12">
@@ -28,43 +30,43 @@
                                             <div class="col-md-12 col-xs-12">
                                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">Codigo</label>
                                                 <div class="col-md-8 col-sm-9 col-xs-12">
-                                                    <input type="text" id="modelo_auto" required="required" class="form-control col-md-7 col-xs-12">
+                                                    <input type="text" id="codigo_existencia" required="required" class="form-control col-md-7 col-xs-12">
                                                  </div>
-                                                 <button type="button" class="btn btn-info">Info</button>
+                                                 <button type="button" id="botonInfo" class="btn btn-info">Info</button>
                                             </div>
                                             <br><br/>
                                             <div class="col-md-12 col-xs-12">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Nombre</label>
                                                 <div class="col-md-9 col-sm-9 col-xs-12">
-                                                    <input type="text" id="modelo_auto" required="required" disabled="disabled" class="form-control col-md-7 col-xs-12">
+                                                    <input type="text" id="nombre_existencia" required="required" disabled="disabled" class="form-control col-md-7 col-xs-12">
                                                  </div>
                                             </div>
                                             <br><br/>
                                             <div class="col-md-12 col-xs-12">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Marca</label>
                                                 <div class="col-md-9 col-sm-9 col-xs-12">
-                                                    <input type="text" id="modelo_auto" required="required" disabled="disabled" class="form-control col-md-7 col-xs-12">
+                                                    <input type="text" id="marca_existencia" required="required" disabled="disabled" class="form-control col-md-7 col-xs-12">
                                                  </div>
                                             </div>
                                             <br><br/>
                                             <div class="col-md-12 col-xs-12">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Modelo</label>
                                                 <div class="col-md-9 col-sm-9 col-xs-12">
-                                                    <input type="text" id="modelo_auto" required="required" disabled="disabled" class="form-control col-md-7 col-xs-12">
+                                                    <input type="text" id="modelo_existencia" required="required" disabled="disabled" class="form-control col-md-7 col-xs-12">
                                                  </div>
                                             </div>
                                             <br><br/>
                                             <div class="col-md-12 col-xs-12">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Stock Actual</label>
                                                 <div class="col-md-2 col-sm-9 col-xs-12">
-                                                    <input type="text" id="modelo_auto" required="required" disabled="disabled" value="90"class="form-control col-md-7 col-xs-12">
+                                                    <input type="text" id="stock_actual" required="required" disabled="disabled" value="90"class="form-control col-md-7 col-xs-12">
                                                  </div>
                                             </div>
                                             <br><br/>
                                             <div class="col-md-12 col-xs-12">
                                             <label class="control-label col-md-3 col-sm-3 col-xs-12">Cantidad a agregar</label>
                                                 <div class="col-md-2 col-sm-9 col-xs-12">
-                                                    <input type="text" id="modelo_auto"  required="required" data-inputmask="'mask': '9999'" class="form-control col-md-7 col-xs-12">
+                                                    <input type="text" id="cantidad_agregar"  required="required" data-inputmask="'mask': '9999'" class="form-control col-md-7 col-xs-12">
                                                  </div>
                                             </div>
                                         </div>
@@ -80,10 +82,6 @@
                     </div>
                 </div>
             </div>  
-
-
-
-
 
             <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Extraer Existencia</button>
             <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
@@ -206,28 +204,52 @@
                         <th>Existencias</th>
                     </tr>
                     </thead>
-
-
                     <tbody>
-                    <tr>
-                        <td>0987654321</td>
-                        <td>Buje</td>
-                        <td>Mitsuboshi</td>
-                        <td>B-42</td>
-                        <td>789</td>
-                    </tr>
-                    <tr>
-                        <td>1234567890</td>
-                        <td>Balatas</td>
-                        <td>Ferrari</td>
-                        <td>F-69</td>
-                        <td>123</td>
-                    </tr>
-
+                    @foreach ($insumos as $insumo)
+                        <tr>
+                            <td>{{$insumo->codigo}}</td>
+                            <td>{{$insumo->marca}}</td>
+                            <td>{{$insumo->modelo}}</td>
+                            <td>{{$insumo->nombre}}</td>
+                            <td>{{$insumo->cantidad}}</td>
+                        </tr>
+                    @endforeach 
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 
+<script>
+$(document).ready(function() {
+    $('#botonInfo').click(function()
+    {
+        var codigo = $('#codigo_existencia').val();
+        $.ajax({
+        type: 'GET', //THIS NEEDS TO BE GET
+        url: 'insumo/'+codigo,
+        success: function (data) {
+            if(jQuery.isEmptyObject(data))
+            {
+                console.log("Error");
+            }
+            else{
+                var nombre = data['0'].nombre;
+                var marca = data['0'].marca;
+                var modelo = data['0'].modelo;
+                var stock_actual = data['0'].cantidad;
+
+                $('#nombre_existencia').val(nombre);
+                $('#marca_existencia').val(marca);
+                $('#modelo_existencia').val(modelo);
+                $('#stock_actual').val(stock_actual);
+            }
+        },
+        error: function() { 
+        }
+        });
+
+    });
+});
+</script>
 @stop
