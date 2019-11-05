@@ -16,9 +16,9 @@ class InventarioController extends Controller
     {
         
         $insumos = \DB::table('insumo')->select('codigo','marca','modelo','nombre','descripcion','cantidad')->get();
-        return view('inventario.inventario')->with('insumos', $insumos);
+        $tecnicos = \DB::table('tecnico')->select('rut','nombre','apellidopaterno','apellidomaterno')->get();
 
-
+        return view('inventario.inventario')->with('insumos', $insumos)->with('tecnicos',$tecnicos);
     }
     public function agregarInsumo(Request $request)
     {
@@ -111,7 +111,9 @@ class InventarioController extends Controller
 
         // redireccionamos 
         $insumos = \DB::table('insumo')->select('codigo','marca','modelo','nombre','descripcion','cantidad')->get();
-        return view('inventario.inventario')->with('insumos', $insumos);
+        $tecnicos = \DB::table('tecnico')->select('rut','nombre','apellidopaterno','apellidomaterno')->get();
+
+        return view('inventario.inventario')->with('insumos', $insumos)->with('tecnicos',$tecnicos);
 
     }
     public function extraerExistencias()
