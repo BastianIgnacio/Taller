@@ -229,14 +229,25 @@
         </div>
     </div>
 
-<script>
+<script >
+
+var ex;
+
+$(document).on("click","#eliminar",function()
+{
+    var id = $(this).attr("data-id");
+    console.log('eliminarndo ' + id);
+    var idEliminar = parseInt(id);
+    ex.eliminar(idEliminar);
+    ex.update();
+});
+
 $(document).ready(function() {
     
     var canAdd = false;
     var codigoExtraer ='';
+    ex = new Extraccion();
    
-   
-    var ex = new Extraccion();
     $('#botonInfo').click(function()
     {
         var codigo = $('#codigo_existencia').val();
@@ -274,6 +285,25 @@ $(document).ready(function() {
 
         codigoExtraer = $('#codigo_extraer').val();
 
+        if($('#codigo_extraer').val()==="")
+        {
+            new PNotify({
+                                  title: 'Alerta',
+                                  text: 'Codigo Vacio' ,
+                                  hide: false,
+                                  styling: 'bootstrap3'
+                              });
+                        $('#nombre_extraer').val('');
+                        $('#marca_extraer').val('');
+                        $('#modelo_extraer').val('');
+                        $('#stockActual_extraer').val('');
+                        $('#codigo_extraer').val('');
+                        $('#cantidad_a_extraer').val('');
+                        codigoExtraer='';
+                        canAdd=false;
+            return;
+        }
+
         $.ajax({
         type: 'GET', //THIS NEEDS TO BE GET
         url: 'insumo/'+codigoExtraer,
@@ -304,6 +334,7 @@ $(document).ready(function() {
         }
         });
     });
+
     $('#botonAgregarALista').click(function()
     {
         //var codigo = $('#codigo_extraer').val();
@@ -359,7 +390,7 @@ $(document).ready(function() {
             console.log("No Agregar");
             new PNotify({
                                   title: 'Alerta' ,
-                                  text: 'Insumo no selecionado o No existe',
+                                  text: 'Insumo no selecionado o no existe',
                                   hide: false,
                                   styling: 'bootstrap3'
                               });
@@ -370,9 +401,16 @@ $(document).ready(function() {
     $('#test').click(function()
     {
         ex.imprimir();
-       
+        
+    });
+    $('#gg').click(function()
+    {
+        console.log('asd');
+        
     });
 });
+
+
 
 
 class Extraccion
@@ -402,13 +440,10 @@ class Extraccion
                     '<td>' + marcaAPublicar + '</td>'+
                     '<td>' + modeloAPublicar + '</td>'+
                     '<td>' + cantidadAPublicar + '</td>'+
-                    '<td>' + '<button type="button" class="btn btn-danger"> x </button>' + '</td>'+
+                    '<td>' + '<input type="button" id="eliminar" data-id="' + codigoAPublicar + '" class="btn btn-danger" value="x" > ' + '</td>'+
                     '</tr>';
             $('#tabla_extraer').append(htmlTags);
         }  
-
-
-
     }
 
     contiene(codigoRevisar)
@@ -440,7 +475,7 @@ class Extraccion
                     {
                         new PNotify({
                                   title: 'Alerta' ,
-                                  text: 'La cantidad a extraer no debe ser superior a :' + stockActual,
+                                  text: 'La cantidad TOTAL a extraer debe ser igual o menor a ' + stockActual,
                                   hide: false,
                                   styling: 'bootstrap3'
                               });
@@ -484,6 +519,20 @@ class Extraccion
         });
     }
 
+    eliminar(codigoEliminar)
+    {
+        var objeto;
+        for (var i = 0, len = this.lista.length; i < len; i++)
+        {
+            if(this.lista[i].getCodigo()==codigoEliminar)
+            {
+                objeto = this.lista[i];
+            }
+        }   
+
+        this.lista.splice(objeto,1);
+    }
+
     imprimir()
     {
         this.lista.forEach(function(ins) 
@@ -491,6 +540,7 @@ class Extraccion
             console.log(ins.getInsumo());
         });
     }
+
 }
 
 class ExtraccionInsumo
@@ -535,9 +585,9 @@ class ExtraccionInsumo
 
 }
 
+
+
 </script>
-
-
 @stop
 
 
