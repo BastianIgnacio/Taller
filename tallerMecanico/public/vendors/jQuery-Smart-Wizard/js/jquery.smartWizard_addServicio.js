@@ -76,8 +76,94 @@ function SmartWizard(target, options) {
                     }
                 }else{
 
-                    // Content Finish
+                    /*
+                    // validamos el tecnico responsable
+                    var rutdeseleccionado = $('input[name=gender]:checked').val();
+                    if (rutdeseleccionado === undefined)
+                    {
+                        alert('Seleccionar tecnico responsable');
+                        return;
+                    }
 
+                    //validamos datos del cliente
+                    var rutCliente = $('#rut_cliente').val();
+                    if(rutCliente==='')
+                    {
+                        alert('Ingresar Rut del cliente');
+                        return;
+                    }
+
+                    var nombreCliente = $('#nombre_cliente').val();
+                    if(nombreCliente==='')
+                    {
+                        alert('Ingresar Nombre Cliente');
+                        return;
+                    }
+
+                    var apellidoPaternoCliente = $('#apellido_paterno_cliente').val();
+                    if(apellidoPaternoCliente==='')
+                    {
+                        alert('Ingresar Apellido Paterno del cliente');
+                        return;
+                    }
+            
+                    var apellidoMaternoCliente = $('#apellido_materno_cliente').val();
+                    if(apellidoMaternoCliente==='')
+                    {
+                        alert('Ingresar Apellido Materno de Cliente');
+                        return;
+                    }
+
+                    var correoCliente = $('#correo_cliente').val();
+                    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+                    var isEmail = regex.test(correoCliente);
+                    if(!isEmail)
+                    {
+                        alert('Ingresar Email valido');
+                        return;
+                    }
+                    
+                    var numeroContactoCliente = $('#numero_contacto_cliente').val();
+                    if(numeroContactoCliente==='')
+                    {
+                        alert('Ingresar Numero de contacto del cliente');
+                        return;
+                    }
+
+                    // validamos los datos del vehiculo 
+                    var tipoAuto = $('#tipo_vehiculo').val();
+                    var patenteVehiculo = $('#patente_vehiculo').val();
+                    var marcaAuto = $('#marca_vehiculo').val();
+                    var modeloAuto = $('#modelo_vehiculo').val();
+                    var anoAuto = $('#ano_vehiculo').val();
+*/
+
+
+                    $.ajaxSetup({
+
+                    headers: {
+
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+
+                    }
+                    });
+
+
+
+
+
+                    $.ajax({
+
+                    type:'POST',
+                    url:'/ajaxPost',
+                    data:{},
+                    success:function(data){
+                        console.log('asd');
+                        $(location).attr('href', 'http://127.0.0.1:8000');
+                    }
+
+                    });
+                    
                     var frm = $this.target.parents('form');
                     if(frm && frm.length){
                         console.log("x aca tbb");
@@ -267,7 +353,7 @@ function SmartWizard(target, options) {
         if (! $this.options.cycleSteps){
             if (0 >= $this.curStepIdx) {
                 $($this.buttons.previous).addClass("buttonDisabled");
-				if ($this.options.hideButtonsOnDisabled) {
+                if ($this.options.hideButtonsOnDisabled) {
                     $($this.buttons.previous).hide();
                 }
             }else{
@@ -441,7 +527,7 @@ $.fn.smartWizard.defaults = {
     contentCache:true, // cache step contents, if false content is fetched always from ajax url
     cycleSteps: false, // cycle step navigation
     enableFinishButton: false, // make finish button enabled always
-	hideButtonsOnDisabled: false, // when the previous/next/finish buttons are disabled, hide them instead?
+    hideButtonsOnDisabled: false, // when the previous/next/finish buttons are disabled, hide them instead?
     errorSteps:[],    // Array Steps with errors
     labelNext:'Next',
     labelPrevious:'Previous',

@@ -248,8 +248,7 @@
     <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
     <!-- jQuery Sparklines -->
     <script src="../vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-    <!-- jQuery Smart Wizard -->
-    <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard_test.js"></script>
+    
     <!-- Datatables -->
     <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
     <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>

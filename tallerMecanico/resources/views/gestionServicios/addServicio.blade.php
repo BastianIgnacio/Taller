@@ -262,3 +262,9 @@
     </div>
 </div>
 @endsection
+
+@section('addScripts')
+    <!-- jQuery Smart Wizard -->
+<script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard_addServicio.js"></script>
+@endsection
+
