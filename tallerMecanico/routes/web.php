@@ -54,6 +54,8 @@ Route::get('/gestionarProveedores/editarProveedor', 'MasterController@editarProv
 Route::get('/404', function() {return view('errores.error404');});
 Route::get('/403', function() {return view('errores.error403');});
 Route::get('/500', function() {return view('errores.error500');});
+
 Route::post('/agregarInsumo','InventarioController@agregarInsumo');
 Route::post('/agregarExistencias','InventarioController@agregarExistencias');
 Route::get('insumo/{codigo}', 'ApiController@getInsumo');
+Route::post('/ajaxPost', 'addServicioController@addServicio');

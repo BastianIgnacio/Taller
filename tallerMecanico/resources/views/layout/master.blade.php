@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    @yield('addHead')
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
@@ -273,6 +274,7 @@
 
      <!-- input mask -->
     <script src="../vendors/jquery.inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+    @yield('addScripts')
 </body>
 
 </html>
