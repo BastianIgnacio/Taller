@@ -74,17 +74,9 @@ function SmartWizard(target, options) {
                     if(!$this.options.onFinish.call(this,$($this.steps), context)){
                         return false;
                     }
-                }else{
-
-                    /*
-                    // validamos el tecnico responsable
-                    var rutdeseleccionado = $('input[name=gender]:checked').val();
-                    if (rutdeseleccionado === undefined)
-                    {
-                        alert('Seleccionar tecnico responsable');
-                        return;
-                    }
-
+                }
+                else
+                {
                     //validamos datos del cliente
                     var rutCliente = $('#rut_cliente').val();
                     if(rutCliente==='')
@@ -136,21 +128,22 @@ function SmartWizard(target, options) {
                     var marcaAuto = $('#marca_vehiculo').val();
                     var modeloAuto = $('#modelo_vehiculo').val();
                     var anoAuto = $('#ano_vehiculo').val();
-*/
 
-
+                    // validamos el tecnico responsable
+                    var rutdeseleccionado = $('input[name=gender]:checked').val();
+                    if (rutdeseleccionado === undefined)
+                    {
+                        alert('Seleccionar tecnico responsable');
+                        return;
+                    }
+                    var secretaria = 'secretaria_test';
+                    
                     $.ajaxSetup({
 
                     headers: {
-
                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-
                     }
                     });
-
-
-
-
 
                     $.ajax({
 

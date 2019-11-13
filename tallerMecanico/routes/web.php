@@ -11,23 +11,44 @@
 |
 */
 
-Route::get('/', 'MasterController@dashboard');
-
+// Rutas de Servicios
 Route::get('/add-servicio', 'AddServicioController@index');
+Route::get('servicio/{codigo}','ServiciosController@visualizar');
 
-Route::get('/dashboard', 'MasterController@dasboard');
+Route::get('/serviciosActivos', 'ServiciosController@serviciosActivos');
 
-Route::get('/gestionar-permisos', 'MasterController@gestionarPermisos');
+//Rutas de Inventario
 
+
+//Rutas de Tecnicos
 Route::get('/gestionar-tecnicos', 'GestionTecnicosController@index');
-
 Route::get('/gestionar-tecnicos/add-tecnico', 'MasterController@addTecnico');
 Route::post('/gestionar-tecnicos/add-tecnico', 'addTecnicosController@addTecnico');
 Route::post('/gestionar-tecnicos/eliminar-tecnico', 'GestionTecnicosController@eliminarTecnico');
-
-
-
 Route::get('/gestionar-tecnicos/editar-tecnico', 'MasterController@editarTecnico');
+
+//Rutas de Proveedores
+
+
+
+//Rutas de Clientes
+
+//Rutas de Vehiculos
+
+//Rutas de permisos
+Route::get('/gestionar-permisos', 'MasterController@gestionarPermisos');
+
+
+//Rutas de index
+Route::get('/', 'MasterController@dashboard');
+Route::get('/dashboard', 'MasterController@dasboard');
+
+
+
+
+
+
+
 
 Route::get('/gestionar-proveedores/lista-proveedores', 'MasterController@gestionarProveedores');
 
@@ -42,6 +63,7 @@ Route::get('/inventario', 'InventarioController@index');
 Route::get('/inventario/addExistencia', 'MasterController@addExistencia');
 
 Route::get('/gestionServicios/editarTareas', 'MasterController@editarTareas');
+
 
 Route::get('/gestionServicios/editarInsumosTarea', 'MasterController@editarInsumosTarea');
 
