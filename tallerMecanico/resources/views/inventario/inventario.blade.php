@@ -211,6 +211,7 @@
                         <th>Marca</th>
                         <th>Modelo</th>
                         <th>Existencias</th>
+                        <th>Acciones</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -221,6 +222,30 @@
                             <td>{{$insumo->modelo}}</td>
                             <td>{{$insumo->nombre}}</td>
                             <td>{{$insumo->cantidad}}</td>
+                            <th>
+                            
+                            <button type="button" class="btn btn-info fa fa-edit" data-toggle="modal" data-target=".{{$insumo->codigo}}"> </button>
+            <div class="modal fade {{$insumo->codigo}}" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Editar codigo {{$insumo->codigo}}</h4>
+                        </div>
+                        <div class="modal-body">
+                        
+                            
+                        </div>
+                        <div class="modal-footer">
+                            <button type="reset" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            <button type="submit" class="btn btn-primary">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+                            </th>
                         </tr>
                     @endforeach 
                     </tbody>

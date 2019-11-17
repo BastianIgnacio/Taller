@@ -23,15 +23,15 @@
                       <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
                         <div class="well profile_view">
                           <div class="col-sm-12">
+                            <div class="left col-xs-12">
                             <h4 class="brief"><i>PATENTE</i></h4>
                             <h4 class="brief"><i>COLOR</i></h4>
                             <h4 class="brief"><i>TIPO</i></h4>
-                            <div class="left col-xs-12">
                               <h2>Institucion o dueño </h2>
                               <p><strong>Sobre : </strong> </p>
                               <ul class="list-unstyled">
-                                <li><i class="fa fa-building"></i> Tecnico Responsable: </li>
-                                <li><i class="fa fa-building"></i> Dirección: </li>
+                                <li><i class="fa fa-user"></i> Tecnico Responsable: </li>
+                                <li><i class="fa fa-map-marker"></i> Dirección: </li>
                                 <li><i class="fa fa-phone"></i> Contacto : </li>
                               </ul>
                             </div>
@@ -40,7 +40,7 @@
                           <div class="col-xs-12 bottom text-center">
                             <div class="col-xs-12 col-sm-12 emphasis">
                               <button type="button" class="btn btn-primary btn-xs">
-                                <i class="fa fa-user"> </i> Ver más
+                                <i class="fa fa-automobile"> </i> Visualizar
                               </button>
                             </div>
                           </div>
@@ -49,15 +49,15 @@
                       <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
                         <div class="well profile_view">
                           <div class="col-sm-12">
+                            <div class="left col-xs-12">
                             <h4 class="brief"><i>PATENTE</i></h4>
                             <h4 class="brief"><i>COLOR</i></h4>
                             <h4 class="brief"><i>TIPO</i></h4>
-                            <div class="left col-xs-12">
                               <h2>Institucion o dueño </h2>
                               <p><strong>Sobre : </strong> </p>
                               <ul class="list-unstyled">
-                                <li><i class="fa fa-building"></i> Tecnico Responsable: </li>
-                                <li><i class="fa fa-building"></i> Dirección: </li>
+                                <li><i class="fa fa-user"></i> Tecnico Responsable: </li>
+                                <li><i class="fa fa-map-marker"></i> Dirección: </li>
                                 <li><i class="fa fa-phone"></i> Contacto : </li>
                               </ul>
                             </div>
@@ -66,7 +66,7 @@
                           <div class="col-xs-12 bottom text-center">
                             <div class="col-xs-12 col-sm-12 emphasis">
                               <button type="button" class="btn btn-primary btn-xs">
-                                <i class="fa fa-user"> </i> Ver más
+                                <i class="fa fa-automobile"> </i> Visualizar
                               </button>
                             </div>
                           </div>
@@ -75,15 +75,15 @@
                       <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
                         <div class="well profile_view">
                           <div class="col-sm-12">
+                            <div class="left col-xs-12">
                             <h4 class="brief"><i>PATENTE</i></h4>
                             <h4 class="brief"><i>COLOR</i></h4>
                             <h4 class="brief"><i>TIPO</i></h4>
-                            <div class="left col-xs-12">
                               <h2>Institucion o dueño </h2>
                               <p><strong>Sobre : </strong> </p>
                               <ul class="list-unstyled">
-                                <li><i class="fa fa-building"></i> Tecnico Responsable: </li>
-                                <li><i class="fa fa-building"></i> Dirección: </li>
+                                <li><i class="fa fa-user"></i> Tecnico Responsable: </li>
+                                <li><i class="fa fa-map-marker"></i> Dirección: </li>
                                 <li><i class="fa fa-phone"></i> Contacto : </li>
                               </ul>
                             </div>
@@ -92,7 +92,7 @@
                           <div class="col-xs-12 bottom text-center">
                             <div class="col-xs-12 col-sm-12 emphasis">
                               <button type="button" class="btn btn-primary btn-xs">
-                                <i class="fa fa-user"> </i> Ver más
+                                <i class="fa fa-automobile"> </i> Visualizar
                               </button>
                             </div>
                           </div>
@@ -101,15 +101,15 @@
                       <div class="col-md-4 col-sm-4 col-xs-12 profile_details">
                         <div class="well profile_view">
                           <div class="col-sm-12">
+                            <div class="left col-xs-12">
                             <h4 class="brief"><i>PATENTE</i></h4>
                             <h4 class="brief"><i>COLOR</i></h4>
                             <h4 class="brief"><i>TIPO</i></h4>
-                            <div class="left col-xs-12">
                               <h2>Institucion o dueño </h2>
                               <p><strong>Sobre : </strong> </p>
                               <ul class="list-unstyled">
-                                <li><i class="fa fa-building"></i> Tecnico Responsable: </li>
-                                <li><i class="fa fa-building"></i> Dirección: </li>
+                                <li><i class="fa fa-user"></i> Tecnico Responsable: </li>
+                                <li><i class="fa fa-map-marker"></i> Dirección: </li>
                                 <li><i class="fa fa-phone"></i> Contacto : </li>
                               </ul>
                             </div>
@@ -118,12 +118,13 @@
                           <div class="col-xs-12 bottom text-center">
                             <div class="col-xs-12 col-sm-12 emphasis">
                               <button type="button" class="btn btn-primary btn-xs">
-                                <i class="fa fa-user"> </i> Ver más
+                                <i class="fa fa-automobile"> </i> Visualizar
                               </button>
                             </div>
                           </div>
                         </div>
                       </div>
+                      
 
                     </div>
                   </div>
